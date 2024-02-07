@@ -1,0 +1,15 @@
+@api = http://localhost:3000/api/1.0
+
+### Create
+POST {{api}}/users
+Content-Type: application/json
+Authorization: Bearer 123456
+
+{
+  "name": "Elmer Omero",
+  "age": 40,
+  "email": "elmeromero@gmail.com"
+}
+
+### Read All
+GET {{api}}/users
